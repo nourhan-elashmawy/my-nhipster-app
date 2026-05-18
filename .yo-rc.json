@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "backendType": "NodeJS",
+    "baseName": "myNhipsterApp",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "3.2.0"
+      }
+    ],
+    "clientFramework": "react",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1779090447583,
+    "databaseType": "sql",
+    "enableTranslation": false,
+    "entities": [],
+    "jhipsterVersion": "8.10.0",
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "prodDatabaseType": "postgresql",
+    "serverPort": null,
+    "testFrameworks": [],
+    "withAdminUi": false
+  },
+  "generator-jhipster-nodejs": {
+    "nodejsVersion": "3.2.0"
+  }
+}
