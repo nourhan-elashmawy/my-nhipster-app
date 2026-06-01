@@ -9,10 +9,11 @@ ENV CYPRESS_INSTALL_BINARY=0
 
 COPY . .
 
-RUN npm install
-RUN npm run --workspace server build
-RUN npm run --workspace client build
-RUN npm cache clean --force
+RUN corepack enable
+RUN pnpm install --frozen-lockfile
+RUN pnpm --filter ./server run build
+RUN pnpm --filter ./client run build
+RUN pnpm store prune
 RUN rm -rf target tmp
 
 EXPOSE 8080

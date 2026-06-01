@@ -81,24 +81,23 @@ After installing Node, you should be able to run the following command to instal
 You will only need to run this command when dependencies change in [package.json](package.json).
 
 ```
-npm install
+pnpm install
 ```
 
-We use npm scripts and [Webpack][] as our build system.
+We use pnpm scripts and [Webpack][] as our build system.
 
 Run the following commands in two separate terminals to create a blissful development experience where your browser
 auto-refreshes when files change on your hard drive.
 
 ```
 ./mvnw
-npm start
+pnpm start
 ```
 
-Npm is also used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
-specifying a newer version in [package.json](package.json). You can also run `npm update` and `npm install` to manage dependencies.
-Add the `help` flag on any command to see how you can use it. For example, `npm help update`.
+pnpm is also used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
+specifying a newer version in [package.json](package.json). You can also run `pnpm update` and `pnpm install` to manage dependencies.
 
-The `npm run` command will list all the scripts available to run for this project.
+The `pnpm run` command will list all the scripts available to run for this project.
 
 ### PWA Support
 

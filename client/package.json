@@ -122,11 +122,5 @@
   },
   "engines": {
     "node": ">=22.14.0"
-  },
-  "cacheDirectories": [
-    "node_modules"
-  ],
-  "overrides": {
-    "browser-sync": "3.0.3"
   }
 }

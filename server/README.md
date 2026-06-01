@@ -31,7 +31,7 @@
 ## Installation
 
 ```bash
-$ npm install
+$ pnpm install
 ```
 
 ## TypeORM configuration
