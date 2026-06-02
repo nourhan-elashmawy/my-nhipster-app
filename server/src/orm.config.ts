@@ -12,8 +12,6 @@ function ormConfig(): TypeOrmModuleOptions {
     ormconfig = {
       name: 'default',
       type: 'postgres',
-      // typeorm fails to auto load driver due to workspaces resolution
-      driver: require('pg'),
       database: 'myNhipsterApp',
       host: 'postgresql',
       // port: ,
@@ -26,8 +24,7 @@ function ormConfig(): TypeOrmModuleOptions {
     ormconfig = {
       name: 'default',
       type: 'sqlite',
-      // typeorm fails to auto load driver due to workspaces resolution
-      driver: require('sqlite3'),
+
       database: ':memory:',
       logging: true,
     };
@@ -35,21 +32,17 @@ function ormConfig(): TypeOrmModuleOptions {
     ormconfig = {
       name: 'default',
       type: 'postgres',
-      // typeorm fails to auto load driver due to workspaces resolution
-      driver: require('sqlite3'),
       database: 'myNhipsterApp',
       host: '127.0.0.1',
-      // port: ,
-      username: 'myNhipsterApp',
-      password: '',
+      port: 5432,
+      username: 'postgres',
+      password: '12345',
       logging: false,
     };
   } else {
     ormconfig = {
       name: 'default',
       type: 'sqlite',
-      // typeorm fails to auto load driver due to workspaces resolution
-      driver: require('sqlite3'),
       database: `${__dirname}../../target/db/sqlite-dev-db.sql`,
       logging: true,
     };
