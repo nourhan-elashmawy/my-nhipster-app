@@ -51,8 +51,24 @@
     "node": ">=22.14.0"
   },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "b",
+      "bcrypt",
+      "c",
+      "p",
+      "r",
+      "sqlite3",
+      "t",
+      "unrs-resolver",
+      "y"
+    ],
     "overrides": {
       "browser-sync": "3.0.3"
-    }
+    },
+    "ignoredBuiltDependencies": [
+      "@scarf/scarf",
+      "core-js"
+    ]
   }
 }
