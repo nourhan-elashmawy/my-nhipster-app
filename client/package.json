@@ -5,7 +5,7 @@
   "description": "Description for My Nhipster App",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "pnpm run webapp:prod --",
+    "build": "pnpm run webapp:prod",
     "build-watch": "concurrently 'pnpm run webapp:build:dev -- --watch' npm:backend:start",
     "ci:frontend:test": "pnpm run webapp:build:$npm_package_config_default_environment && pnpm run test-ci",
     "clean-www": "rimraf ../server/dist/static/",
