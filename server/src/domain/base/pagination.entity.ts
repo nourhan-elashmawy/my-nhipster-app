@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 import { Expose as JsonProperty, Type } from 'class-transformer';
 import { ParsedQs } from 'qs';
 import { BaseEntity } from './base.entity';

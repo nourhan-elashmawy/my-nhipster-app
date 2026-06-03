@@ -61,7 +61,6 @@ describe('User', () => {
     const { password: _savedPassword, lastModifiedDate: _savedLastModifiedDate, ...savedUser } = await service.save(testUserDTO);
     savedUser.firstName = 'Updated Name';
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const {
       password: _updatedPassword,
       lastModifiedDate: _updatedLastModifiedDate,

@@ -60,7 +60,6 @@ export class SeedUsersRoles1570200490072 implements MigrationInterface {
     lastModifiedBy: 'system',
   };
 
-  // eslint-disable-next-line
   public async up(queryRunner: QueryRunner): Promise<any> {
     const authorityRepository = queryRunner.connection.getRepository('jhi_authority');
 
