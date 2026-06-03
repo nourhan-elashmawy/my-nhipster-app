@@ -48,20 +48,14 @@
   },
   "packageManager": "pnpm@10.26.0",
   "engines": {
-    "node": ">=22.14.0"
+    "node": ">=24.0.0 <25"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@nestjs/core",
-      "b",
       "bcrypt",
-      "c",
-      "p",
-      "r",
       "sqlite3",
-      "t",
-      "unrs-resolver",
-      "y"
+      "unrs-resolver"
     ],
     "overrides": {
       "browser-sync": "3.0.3"
