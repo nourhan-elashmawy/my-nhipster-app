@@ -60,13 +60,13 @@ will generate the file:
 #### Running
 
 ```bash
-npm run start:app
+pnpm run start:app
 ```
 
 #### Building
 
 ```bash
-npm run build:app
+pnpm run build:app
 ```
 
 The build folder with all compiled sources will be **server//dist**.
@@ -122,13 +122,13 @@ Note: [Workbox](https://developers.google.com/web/tools/workbox/) powers JHipste
 For example, to add [Leaflet][] library as a runtime dependency of your application, you would run following command:
 
 ```
-npm install --save --save-exact leaflet
+pnpm install --save --save-exact leaflet
 ```
 
 To benefit from TypeScript type definitions from [DefinitelyTyped][] repository in development, you would run following command:
 
 ```
-npm install --save-dev --save-exact @types/leaflet
+pnpm install --save-dev --save-exact @types/leaflet
 ```
 
 Then you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:
@@ -145,7 +145,7 @@ For further instructions on how to develop with JHipster, have a look at [Using 
 Unit tests are run by [Jest][]. They're located near components and can be run with:
 
 ```
-npm test
+pnpm test
 ```
 
 ## Others
@@ -164,7 +164,7 @@ You can run a Sonar analysis with using the [sonar-scanner](https://docs.sonarqu
 Then, run a Sonar analysis in the server/ folder:
 
 ```sh
-npm run sonar:scanner
+pnpm run sonar:scanner
 ```
 
 For more information, refer to the [Code quality page][].
